@@ -1,0 +1,86 @@
+/*main color #fee5de  ,rgba(254, 229, 222)*/
+
+
+/* general set up  */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+}
+
+#header,
+#footer,
+.page {
+    display: block;
+}
+
+.backgroundPic {
+    display: block;
+    width: 100%;
+}
+
+.middle {
+    text-align: center;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+p {
+    font-size: 100%;
+    font-family: lato;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+.page {
+    position: relative;
+    background-image: url(/src/666628.png);
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    margin: 0;
+    background-color: rgb(250, 238, 234);
+    width: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .top_pic {
+        display: none;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        min-width: 320px;
+    }
+    .top_picsmall {
+        display: block;
+        width: 100%;
+        border: none;
+        background-size: contain;
+    }
+}

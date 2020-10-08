@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>68 Lashes and Nails</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- recall header -->
+    <nav id="header"></nav>
+    <!-- webpage body -->
+    <div class="page">
+        <!-- top home page -->
+        <div class="introduction">
+            <h1>Your beauty is your pride and our pride</h1>
+            <a class="button1" href="/html/Contact_Us.html">Make a Booking</a>
+        </div>
+        <div class="section1">
+            <img class="top_pic" href="/" alt="front page picture" src="https://img1.wsimg.com/isteam/stock/DxAr7Bw/">
+            <img class="top_picsmall" href="/" alt="front page picture" src="/src/317_main.jpg">
+        </div>
+        <a class="button2" href="/html/Contact_Us.html">Make a Booking</a>
+        <!-- works showcase -->
+        <div class="backgroundPic tittle">
+            <h1 class="middle"> Our works</h1>
+        </div>
+        <div class="slideshow">
+            <div>
+                <a class="prev" onclick="plusSlides(-1)"><img src="/src/icons8-back-to-64.png"></a>
+            </div>
+            <div class="slideshow-container">
+
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img class="img" src="/src/sample2.jpg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img class="img" src="/src/sample5.jpg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img class="img" src="/src/sample1.jpg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img class="img" src="/src/beauty_1580468424677.jpeg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img class="img" src="/src/sample3.jpg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img class="img" src="/src/Pendicure 2.jpg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img class="img" src="/src/sample4.jpg">
+                    <div class="text"></div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <img class="next" onclick="plusSlides(1)" src="/src/icons8-next-page-64.png">
+            </div>
+        </div>
+        <div class="dotLine" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <!-- Subscribe Newsletter -->
+        <div class="section3">
+            <div class="letter">
+                <div>
+                    <h1>Newsletter</h1>
+                </div>
+                <div class="textbox">
+                    <p>Subscribe to our webpage for promotion and update of our services and products</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="email_input">
+                    <input name="email" type="text" class="validate[custom[email]]" id="email" placeholder="Email" />
+                    <button id="subscribe">Thank you</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <-- recall footer  -->
+    <div class="container" id="footer"></div>
+    <!-- recall other html -->
+    <script>
+        $(document).ready(function() {
+            $('#header').load("/header.html");
+            $('#footer').load("/footer.html");
+        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script src="/index.js" async defer></script>
+</body>
+
+</html>
