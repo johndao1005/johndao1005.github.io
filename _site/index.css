@@ -47,12 +47,13 @@ a {
 
 p {
     font-size: 100%;
-    font-family: lato;
+    font-family: 'lato';
     line-height: 1.2;
     font-weight: lighter;
 }
 
 .page {
+    z-index: 1;
     position: relative;
     background-image: url(/src/666628.png);
     font-family: 'Oswald', sans-serif;
@@ -82,5 +83,59 @@ body {
         width: 100%;
         border: none;
         background-size: contain;
+    }
+}
+
+
+/* sidenav */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    font-family: 'lato', serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    background-color: rgba(250, 203, 190);
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    right: 25px;
+    font-size: 36px;
+    margin: 10px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
     }
 }

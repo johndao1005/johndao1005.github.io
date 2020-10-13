@@ -1,11 +1,15 @@
 .loginArea {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: minmax(500px, 800px);
 }
 
 .mobileSignup {
     display: none;
+}
+
+body {
+    margin: 0;
 }
 
 p {
@@ -23,18 +27,18 @@ span {
     text-align: left;
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: repeat(autofill, minmax(35px, 40px));
+    grid-template-rows: auto;
     grid-gap: 6px;
     margin: 20px 20px;
 }
 
 .login,
 #signup {
-    padding-left: 20px;
+    width: fit-content;
+    margin: auto;
     text-align: left;
     width: 360px;
     height: 360px;
-    margin: 20px 60px;
     background-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -67,9 +71,7 @@ span {
     }
     .login,
     #signup {
-        width: 75%;
-        height: 400px;
-        margin: 30px auto;
+        margin: 70px auto;
         padding-right: 20px;
     }
     .input,
