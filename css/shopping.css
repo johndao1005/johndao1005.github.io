@@ -16,13 +16,13 @@
     grid-template-rows: 25px;
 }
 
-#addCart {
+.addCart {
     margin: 1px 4px 0px 0px;
     padding: 3px 8px 2px 6px;
     background-color: rgb(254, 229, 222);
 }
 
-#addCart:hover {
+.addCart:hover {
     background-color: rgba(250, 203, 190);
 }
 
