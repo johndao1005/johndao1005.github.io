@@ -1,12 +1,13 @@
-#footer {
+#footer1 {
     font-family: 'Lato', serif;
     width: 100%;
     display: grid;
-    grid-template-columns: 300px auto;
-    grid-template-rows: 1fr;
-    position: sticky;
+    grid-template-columns: 300px repeat(3, minmax(150px, 300px));
+    grid-template-rows: auto;
+    position: relative;
     margin: 0;
     background-color: rgba(254, 229, 222);
+    bottom: 0;
 }
 
 .footerLogo {
@@ -23,14 +24,6 @@
     padding-left: 25px;
 }
 
-.footerLink {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-    grid-template-rows: 230px;
-    /* padding: auto;
-    margin: auto; */
-}
-
 .footerList ul {
     list-style: none;
     overflow: hidden;
@@ -39,6 +32,10 @@
     text-decoration: none;
     width: 100%;
     position: relative;
+}
+
+.footerList {
+    margin: 10px auto 20px;
 }
 
 .footerList li {
@@ -69,22 +66,22 @@ li.category_name {
     display: none;
 }
 
+.forDisplay {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .part1 {
         display: none;
     }
-    #footer {
-        padding: 10px 5%;
-        grid-template-columns: 0 auto;
-    }
-    .footerLink {
-        grid-template-rows: auto;
-        grid-template-columns: repeat(3, minmax(160px, 200px));
+    #footer1 {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 500px) {
-    .part1 {
+    .part1,
+    .forDisplay {
         display: block;
     }
     img.footerLogo {
@@ -93,7 +90,7 @@ li.category_name {
     .mapFooter {
         display: none;
     }
-    #footer {
+    #footer1 {
         padding: 0;
         margin: 0;
         grid-template-columns: 1fr;
@@ -105,6 +102,11 @@ li.category_name {
     .footerList ul {
         margin: 0;
     }
+    .one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .two,
     .three {
         display: none;
     }
@@ -113,16 +115,18 @@ li.category_name {
         margin: 10px 15px;
     }
     .part3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
         margin: 0px 40px;
         padding: 0;
+        right: 0;
+        text-align: right;
     }
     .instapic {
         height: 60px;
+        margin: 0 10px 0 auto;
     }
     .fbpic {
-        margin: 8px 20px 5px 20px;
+        margin: 8px auto 5px;
         height: 45px;
     }
 }
