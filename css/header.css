@@ -96,6 +96,7 @@ div .userLogin a {
 @media screen and (max-width: 500px) {
     .nav {
         grid-template-columns: 247px minmax(73px, auto);
+        grid-template-rows: 65px;
         margin: 0;
     }
 }
