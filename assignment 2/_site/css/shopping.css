@@ -1,12 +1,9 @@
 .display {
+    margin: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-template-rows: 500px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
     grid-gap: 1rem;
-}
-
-a {
-    font-size: 140%;
 }
 
 .pricetag {
@@ -20,13 +17,13 @@ a {
     grid-template-rows: 25px;
 }
 
-#addCart {
+.addCart {
     margin: 1px 4px 0px 0px;
     padding: 3px 8px 2px 6px;
     background-color: rgb(254, 229, 222);
 }
 
-#addCart:hover {
+.addCart:hover {
     background-color: rgba(250, 203, 190);
 }
 
@@ -38,15 +35,26 @@ h1 {
 .items {
     display: block;
     max-width: 220px;
-    margin: 1px 5px 10px 5px;
+    margin: 20px auto;
     font-family: 'Lato', sans-serif;
+}
+
+.description {
+    padding: 10px 30px;
+}
+
+a {
+    color: black;
 }
 
 .product {
     border: 0.005mm solid rgba(185, 182, 182, 0.75);
     border-radius: 10px;
-    margin: 20px 10px;
-    padding: 10px 20px;
+    max-height: 490px;
+    width: 280px;
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: 200px 400px;
     background-color: white;
     box-shadow: 10px 10px 5px 0px rgba(80, 78, 78, 0.75);
     -webkit-border-radius: 10px;
@@ -57,25 +65,26 @@ h1 {
 
 @media screen and (max-width: 880px) {
     .display {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(autofill, minmax(250px, 1fr));
         grid-template-rows: auto;
+        margin: 20px auto;
     }
     .items {
         width: 100%;
     }
     .product {
         padding: auto;
-        margin: 20px 30px;
+        margin: 20px auto;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .product {
-        margin: 15px 40px;
+        margin: 15px auto;
     }
     .display {
         margin: auto;
-        grid-template-columns: 400px;
+        grid-template-columns: minmax(250px, 400px);
         grid-template-rows: auto;
     }
 }
