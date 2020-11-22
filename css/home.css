@@ -67,14 +67,6 @@
     font-size: 130%;
 }
 
-h1 {
-    font-family: "Libre Baskerville", Garamond, serif;
-    padding: 10px 10px;
-    margin: auto;
-    position: relative;
-    font-size: 250%;
-}
-
 .section3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -86,7 +78,7 @@ h1 {
     padding: 40px 20px;
 }
 
-.email_input {
+#subscribeForm {
     margin: 60px 20px;
     padding: 40px 20px;
     display: grid;
@@ -95,9 +87,11 @@ h1 {
     grid-gap: 20px;
 }
 
-#email {
+#email-subscribe {
+    margin: 10px;
+    background-color: white;
     text-align: left;
-    padding: 8px 70px 7px 5px;
+    padding: 8px 0px 5px;
     font-size: 16px;
     border-width: 1px;
     border-color: rgb(226, 226, 226);
@@ -106,14 +100,10 @@ h1 {
 #subscribe {
     margin: 10px 30px;
     background-color: rgba(254, 229, 222);
-    border-radius: 25px;
+    border-radius: 5px;
     width: auto;
     font-size: 16px;
     padding: 8px 15px 7px 15px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
 }
 
 .dotLine {
@@ -230,6 +220,9 @@ h1 {
         margin: auto;
         padding: 0;
     }
+    .section3 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -247,7 +240,7 @@ h1 {
     .letter {
         font-size: 80%;
     }
-    #email {
+    #email-subscribe {
         padding: 8px 30px 7px 5px;
     }
     .email_input {
@@ -261,6 +254,23 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+    .page {
+        padding: 0;
+    }
+    .top_pic {
+        display: none;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        min-width: 320px;
+    }
+    .top_picsmall {
+        display: block;
+        width: 100%;
+        border: none;
+        background-size: contain;
+    }
     .slideshow {
         grid-template-rows: 250px;
     }
@@ -289,8 +299,11 @@ h1 {
         width: 10px;
         margin: 0 1.5px;
     }
-    #email {
+    #email-subscribe {
         margin: 10px 20px;
         padding: 8px 10px 7px 5px;
+    }
+    #subscribeForm {
+        margin-bottom: 30px;
     }
 }

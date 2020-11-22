@@ -27,11 +27,6 @@
     background-color: rgba(250, 203, 190);
 }
 
-h1 {
-    margin: 0;
-    padding: 20px;
-}
-
 .items {
     display: block;
     max-width: 220px;
@@ -53,7 +48,7 @@ a {
     max-height: 490px;
     width: 280px;
     display: grid;
-    grid-column: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 200px 400px;
     background-color: white;
     box-shadow: 10px 10px 5px 0px rgba(80, 78, 78, 0.75);
@@ -65,7 +60,7 @@ a {
 
 @media screen and (max-width: 880px) {
     .display {
-        grid-template-columns: repeat(autofill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-template-rows: auto;
         margin: 20px auto;
     }
@@ -73,7 +68,7 @@ a {
         width: 100%;
     }
     .product {
-        padding: auto;
+        padding: 0;
         margin: 20px auto;
     }
 }

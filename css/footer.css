@@ -2,18 +2,27 @@
     font-family: 'Lato', serif;
     width: 100%;
     display: grid;
-    grid-template-columns: 300px repeat(3, minmax(150px, 300px));
-    grid-template-rows: auto;
+    grid-template-columns: 230px repeat(3, minmax(150px, 300px));
+    grid-template-rows: 180px;
     position: relative;
     margin: 0;
     background-color: rgba(254, 229, 222);
     bottom: 0;
 }
 
+.copyright {
+    position: relative;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 12px;
+    padding-bottom: 1px;
+    bottom: 0
+}
+
 .footerLogo {
     width: 180px;
     display: block;
-    margin: 10px auto;
+    margin: 60px auto;
     padding: 0;
 }
 
@@ -27,7 +36,7 @@
 .footerList ul {
     list-style: none;
     overflow: hidden;
-    margin: 40px auto 0;
+    margin: 10 auto 0;
     padding: 0;
     text-decoration: none;
     width: 100%;
@@ -94,7 +103,7 @@ li.category_name {
         padding: 0;
         margin: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 170px 65px;
+        grid-template-rows: 100px 170px;
     }
     .footerList {
         height: 170px;
