@@ -16,5 +16,9 @@ contact.addEventListener('submit', function(e) {
         });
         alert(`Thank you !!  We got your message and will try to respond as soon as possible.`);
     } else { return };
+    contact.email.value = "";
+    contact.message.value = "";
+    contact.firstName.value = "";
+    contact.lastName.value = "";
 });
 //try to link with local storage
