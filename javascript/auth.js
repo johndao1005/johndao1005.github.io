@@ -78,6 +78,7 @@ const logout = document.querySelector('#logout');
 logout.addEventListener('click', e => {
     e.preventDefault()
     auth.signOut();
+    location.href = '/index.html';
 })
 
 const loginForm = document.querySelector('#login-form');
@@ -96,4 +97,5 @@ loginForm.addEventListener('submit', e => {
     }).catch(err => {
         loginForm.querySelector('.error').innerHTML = err.message
     })
+
 })

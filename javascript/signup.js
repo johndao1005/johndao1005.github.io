@@ -7,11 +7,12 @@ signupForm.addEventListener('submit', e => {
     const password = signupForm['signup-password'].value;
     auth.createUserWithEmailAndPassword(email, password).then(() => {
         const modal = document.querySelector('#modal-signup');
-        M.Modal.getInstance(modal).close();
+        // M.Modal.getInstance(modal).close();
         signupForm.querySelector('.error').innerHTML = '';
         signupForm.reset();
+        location.href = '/index.html';
     }).catch(err => {
         signupForm.querySelector('.error').innerHTML = err.message
     })
-    location.href = '/index.html';
+
 })
