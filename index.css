@@ -11,6 +11,10 @@ a {
     text-decoration: none !important;
 }
 
+.logiSide {
+    height: 105px;
+}
+
 .heading {
     font-family: "Libre Baskerville", Garamond, serif;
     padding: 10px 10px;
