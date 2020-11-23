@@ -59,11 +59,11 @@ a {
 }
 
 @media screen and (max-width: 880px) {
-    .display {
+    /* .display {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-template-rows: auto;
         margin: 20px auto;
-    }
+    } */
     .items {
         width: 100%;
     }

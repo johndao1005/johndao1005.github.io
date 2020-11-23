@@ -10,6 +10,7 @@ cart.forEach((itm, idx) => {
         let rowElm = document.createElement('div')
             // adding class to div
         rowElm.classList.add('cart-row')
+        rowElm.classList.add('delete')
             // creating id for that item based off the stored item name
         rowElm.id = `itemID-${itm[0]}`
             // filling div with this stuff.   setting the name price and ammount from stored cart doing it for each item
@@ -87,3 +88,26 @@ function updateAmmount(id) {
     calcPrice()
 }
 // Cart Section end
+// Checkout
+const form = document.getElementById('checkout')
+
+form.addEventListener('submit', e => {
+    (e).preventDefault;
+    currentUser = auth.currentUser;
+    if (currentUser === null) {
+        alert('Please login to finish the payment');
+        return;
+        //working in the situation where there is no item in cart
+        // } else if (!cart || cart === null) {
+        //     alert('Please choose at least 1 item');
+        //     return;
+    } else {
+        document.querySelector('.delete').remove();
+        localStorage.removeItem('cart');
+        alert('We recieved your order. You will recieve packing slips and confirmation email shortly ')
+        db.collection('subscribe').doc(currentUser.uid).collection('cart').add({ // Storing the input data to firebase with uid value 
+            title: form.email.value
+        })
+        return;
+    }
+})

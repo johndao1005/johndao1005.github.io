@@ -3,6 +3,7 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 // input params, item name, item price
 function addToCart(itm, price) {
     // if cart array does not exist or pulled from storage
+    let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
         //create a new cart and input current item. Item name, item price and item quantitiy
         let cart = [

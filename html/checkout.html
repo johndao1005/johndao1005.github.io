@@ -79,11 +79,11 @@
                 <div class="products">
                     <div id="payment-cart-list">
                         <div class="cart-row top">
-                            <div class="cart-item cart-column">
+                            <div class="cart-item ">
                                 <span class="cart-item-title">Item Name</span>
                             </div>
-                            <span class="cart-price cart-column">Price</span>
-                            <div class="cart-quantity cart-column">
+                            <span class="cart-price ">Price</span>
+                            <div class="cart-quantity ">
                                 <span class="cart-quantity-input">Quantity</span>
                                 <div></div>
                             </div>
@@ -100,13 +100,11 @@
             <form id="checkout">
                 <div class="informationList">
                     <span>Receiver name*</span>
-                    <input name="CustomerName" id="name" placeholder="Customer name" required="required">
-                    <span>Email*</span>
-                    <input name="Email" type="email" id="email" placeholder="Email" required="required">
+                    <input name="name" id="name" placeholder="Customer name" required="required">
                     <span>Address*</span>
-                    <input type="text" id="address" placeholder="Delivery address" required="required">
+                    <input type="text" id="address" name="address" placeholder="Delivery address" required="required">
                     <span>Phone number</span>
-                    <input type="text" id="phoneNumber" placeholder="Phone number">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
                     <div class="inlineFlex">
                         <input type="checkbox" id="savedetails">
                         <p>Remember your details for next time?</p>
@@ -144,8 +142,8 @@
                         <p>Enter your voucher or discount code</p>
                     </div>
                     <div class="empty"></div>
-                    <div><button type="submit" id="Confirm">Confirm Order</button></div>
                 </div>
+                <button type="submit" id="Confirm">Confirm Order</button>
             </form>
         </div>
     </div>
