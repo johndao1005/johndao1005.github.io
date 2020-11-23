@@ -8,11 +8,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 //open header and footer html 
-$(document).ready(function() {
-    $('#header').load("/header.html");
-    $('#footer').load("/footer.html");
-    $('#addon').load("/addon.html");
-});
+
 //
 // var firebaseConfig = {
 //     apiKey: "AIzaSyCwYYOybQZ8PT5ULjTCtUH9MCkaRWuHGEM",

@@ -23,6 +23,11 @@ p,
 
 /* contact form */
 
+.cart-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .contactForm {
     margin: 10px auto 20px 0px;
     max-width: 600px;
