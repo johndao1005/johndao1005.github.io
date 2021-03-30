@@ -26,6 +26,5 @@ seo:
     - name: 'twitter:image'
       value: images/feature-3.jpg
       relativeUrl: true
-      
 layout: page
 ---

@@ -1,8 +1,8 @@
 ---
 title: Sponsorship
 seo:
-  title: Sponsorship
-  description: This is the sponsorship page
+  title: Gallery
+  description: Our previous meetup and highlight photos taken
   extra:
     - name: 'og:type'
       value: website
