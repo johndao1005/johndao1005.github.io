@@ -1,24 +1,25 @@
 {
-  "name": "johndao1005.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johndao1005/johndao1005.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johndao1005/johndao1005.github.io/issues"
-  },
-  "homepage": "https://github.com/johndao1005/johndao1005.github.io#readme",
-  "dependencies": {
-    "bootstrap": "^5.0.1",
-    "sass": "^1.34.1"
-  }
+    "name": "johndao1005.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/johndao1005/johndao1005.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/johndao1005/johndao1005.github.io/issues"
+    },
+    "homepage": "https://github.com/johndao1005/johndao1005.github.io#readme",
+    "dependencies": {
+        "bootstrap": "^5.0.1",
+        "font-awesome": "^4.7.0",
+        "sass": "^1.34.1"
+    }
 }
