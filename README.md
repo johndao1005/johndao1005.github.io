@@ -15,9 +15,31 @@
 - `--watch` tell the the process to watch for change in the files `style.scss` to update and not terminate the process.
 - creating new file with underscore `_custom.scss` which is to keep all the variables which we override in bootstrap. The underscore indicate the parcel file and not generated into a style sheet
 - Created a layout for scss which divide into sections and components
-- all of them would be importt through `@use` in `style.scss`
+- all of them would be import through `@use` in `style.scss`
+- building slowly from the top to the bottom of the page.
+
+### index Page
+
+- using `navbar` example from Bootstrap using container class instead of container-fluid
+- adding justify content to move the items to the
+
+#### navbar
+-  making it gradient with 
+-  when adding new class, `@use` with the file path need to be included in order to apply the custom styles
+-  example `@use '../custom' as *;` to import the custom and the * is just remove name space
+
+#### buttons
+
+- working with font, padding, margin and border.
+- adding hover effect with `&:hover` within the `.btn-rounded{}`bracket
+- to make the buttons `display:none` when changing into mobile view.  
+  
+``` sass
+@include media-breakpoint-down(sm) {
+        display: none;
+}
+```
 
 ## Resources
 
-https://thenextweb.com/news/guide-crafting-visual-elements-online-portfolio
-
+https://thenextweb.com/news/guide-crafting-visual-elements-online-portfolio  
