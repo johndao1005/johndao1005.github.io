@@ -7,42 +7,46 @@
     <title>John Dao</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import style stylesheet compiled from sass -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Import font awesome -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Import Glightbox which allow popup -->
     <link rel="stylesheet" href="./assets/vendors/css/glightbox.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Import Poppin font -->
+    <link href="https//fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<!-- NAVBAR SECTION -->
+<body>
 
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-    <div class="container ">
-        <a class="navbar-brand" href="#">
-            <img src='./src//codewars_logo_icon_145389.svg' alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- NAVBAR SECTION -->
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNAV">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNAV" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNAV">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
@@ -55,113 +59,112 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li> -->
-            </ul>
-            <button type="button" class="rounded-pill btn-rounded">Contact Me
+                </ul>
+                <button type="button" class="rounded-pill btn-rounded">Contact Me
                 <span>
                     <i class="fas fa-phone-alt"></i>
                 </span>
             </button></div>
-    </div>
-</nav>
+        </div>
+    </nav>
 
-<!-- INTRO SECTION -->
-<section id="home" class="intro-section">
-    <div class="container">
-        <div class="row align-items-center text-white">
-            <!-- Small intro -->
-            <div class="col-md-6 intros text-start">
-                <h1 class="display-2">
-                    <span class="display-2--intro">Hey! I am John</span>
-                    <span class="display-2--description lh-base">
-                       Welcome to my happy zone as well as my porfolio
+    <!-- INTRO SECTION -->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <!-- Small intro -->
+                <div class="col-md-6 intros text-start">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Hey! I am John</span>
+                        <span class="display-2--description lh-base">
+                       Welcome to my happy zone as well as my portfolio
                     </span>
-                </h1>
-                <button type="button" class="rounded-pill btn-rounded">Get in touch
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded">Get in touch
                 <span>
                     <i class="fas fa-arrow-right"></i>
                 </span>
             </button>
-            </div>
-            <!-- Something look like me -->
-            <div class="col-md-6 intros text-end">
-                <div class="video-box">
-                    <img src="./src/64427.png" ali="my picture" class="img-fluid">
+                </div>
+                <!-- Something look like me -->
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="./src/64427.png" ali="my picture" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,192C68.6,192,137,192,206,197.3C274.3,203,343,213,411,213.3C480,213,549,203,617,186.7C685.7,171,754,149,823,133.3C891.4,117,960,107,1029,101.3C1097.1,96,1166,96,1234,112C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-</section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,192C68.6,192,137,192,206,197.3C274.3,203,343,213,411,213.3C480,213,549,203,617,186.7C685.7,171,754,149,823,133.3C891.4,117,960,107,1029,101.3C1097.1,96,1166,96,1234,112C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </section>
 
+    <!-- Input what I learn SECTION -->
+    <section id="topic" class="topic">
+        <div class="container">
+            <div class="row text-center">
+                <h4 class="fw-bold lead mb-3">What I Learned so far</h4>
+            </div>
+        </div>
+        <!-- Library -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm">
+                        <img src="./src/topic/topic-1.svg" alt="Topic 1 logo" title="Topic 1 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm">
+                        <img src="./src/topic/topic-2.svg" alt="Topic 2 logo" title="Topic 2 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm">
+                        <img src="./src/topic/topic-3.svg" alt="Topic 3 logo" title="Topic 3 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm">
+                        <img src="./src/topic/topic-4.svg" alt="Topic 4 logo" title="Topic 4 Logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Input what I learn SECTION -->
-<section id="topic" class="topic">
-    <div class="container">
-        <div class="row text-center">
-            <h4 class="fw-bold lead mb-3">What I Learned so far</h4>
-        </div>
-    </div>
-    <!-- Library -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-5">
-                <div class="topic__logo-box shadow-sm">
-                    <img src="./src/topic/topic-1.svg" alt="Topic 1 logo" title="Topic 1 Logo" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-5">
-                <div class="topic__logo-box shadow-sm">
-                    <img src="./src/topic/topic-2.svg" alt="Topic 2 logo" title="Topic 2 Logo" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-5">
-                <div class="topic__logo-box shadow-sm">
-                    <img src="./src/topic/topic-3.svg" alt="Topic 3 logo" title="Topic 3 Logo" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-5">
-                <div class="topic__logo-box shadow-sm">
-                    <img src="./src/topic/topic-4.svg" alt="Topic 4 logo" title="Topic 4 Logo" class="img-fluid">
-                </div>
+    <!-- Service SECTION -->
+    <section id="services" class="ourservices">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold"> Our services</h1>
             </div>
         </div>
-    </div>
-</section>
+        <!-- Description +content -->
+        <div class="container">
+            <div class="row pt-2 pb-2 mt-5 mb-3">
+                <div class="col-md-6 border-right">
+                    <div class="bg-white p-3">
+                        <h2 class="fw-bold text-capitalize text-center">
+                            What is my Goal?
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-4 text-start">
+                        <p class="fw-light">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt porro magni tenetur facere commodi, temporibus perferendis quo atque doloremque sapiente sunt? </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Details SECTION -->
 
-<!-- Service SECTION -->
-<section id="services" class="ourservices">
-    <div class="container">
-        <div class="row text-center">
-            <h1 class="display-3 fw-bold"> Our services</h1>
-        </div>
-    </div>
-    <!-- Description +content -->
-    <div class="container">
-        <div class="row pt-2 pb-2 mt-5 mb-3">
-            <div class="col-md-6 border-right">
-                <div class="bg-white p-3">
-                    <h2 class="fw-bold text-capitalize text-center">
-                        What is my Goal?
-                    </h2>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bg-white p-4 text-start">
-                    <p class="fw-light">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt porro magni tenetur facere commodi, temporibus perferendis quo atque doloremque sapiente sunt? </p>
-                </div>
-            </div>
-        </div>
-        <!-- Details SECTION -->
-
-        <!-- Marketing content -->
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xsm-12 services mt-4">
-                <div class="services__content">
-                    <div class="icon d-block fas fa-paper-plane"></div>
-                    <h3 class="display-3--tittle mt-1">Marketing</h3>
-                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto aperiam commodi impedit laborum facere vel assumenda ab ducimus rem hic magni quaerat, qui dolores ipsum similique! Illo.</p>
-                    <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <!-- Marketing content -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xsm-12 services mt-4">
+                    <div class="services__content">
+                        <div class="icon d-block fas fa-paper-plane"></div>
+                        <h3 class="display-3--tittle mt-1">Marketing</h3>
+                        <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto aperiam commodi impedit laborum facere vel assumenda ab ducimus rem hic magni quaerat, qui dolores ipsum similique! Illo.</p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
                     <span>
                         <i class="fas fa-arrow-right"></i>
                     </span>
@@ -213,17 +216,20 @@
     </div>
 </div>
 </section>
+
 <!-- Testimonials SECTION -->
-<section id="testimonials" class="testimonials">
+<section id="testimonial" class="testimonial">
     <div class="container">
         <div class="row text-center text-white">
             <h1 class="display-3 fw-bold">Testimonials</h1>
             <hr style="width:100px; height:3px;" class="mx-auto">
             <p class="lead pt-1">What out clients are saying</p>
         </div>
+
+
 <!-- Slide show SECTION -->
         <div class="row align-items-center">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!-- slide number 1 -->
                     <div class="carousel-item active">
@@ -244,7 +250,7 @@
                       </div>
                       <!-- Clients picture -->
                       <div class="testimonial__picture">
-                          <img class ="img-fluid"  src="http://placehold.it/">
+                          <img class ="rounded-circle img-fluid"  src="./src/reference/refrence1.jpg">
                       </div>
                       <!-- Role and Name -->
                       <div class="testimonial__name">
@@ -272,7 +278,7 @@
                       </div>
                       <!-- Clients picture -->
                       <div class="testimonial__picture">
-                          <img class ="img-fluid"  src="http://placehold.it/">
+                        <img class ="rounded-circle img-fluid"  src="./src/reference/refrence2.jpg">
                       </div>
                       <!-- Role and Name -->
                       <div class="testimonial__name">
@@ -300,36 +306,233 @@
                       </div>
                       <!-- Clients picture -->
                       <div class="testimonial__picture">
-                          <img class ="img-fluid" src="http://placehold.it/">
+                        <img class ="rounded-circle img-fluid"  src="./src/reference/refrence3.jpg">
                       </div>
                       <!-- Role and Name -->
                       <div class="testimonial__name">
                           <h3>John Dao</h3>
                           <p class="fw-light">Financial Manager</p>
                       </div>
-                      
                     </div>
-                    
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="text-center">
+                <a class=" mb-5 btn btn-outline-light fas fa-long-arrow-alt-left" href="#carousel" role="button" data-slide="prev"></a>
+                  <a class="mb-5 btn btn-outline-light fas fa-long-arrow-alt-right" href="#carousel" role="button" data-slide="next"></a>
+                </div>
+                    </div>
                 </div>
             </div>
-
+    </section>
+    <!-- FAQ SECTION
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+                <p class="lead">Know me better</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12"></div>
+            </div>
         </div>
-</section>
+    </section> -->
 
-<body>
+    <!-- Porfolio SECTION -->
+    <section id="portfolio" class="portfolio">
+             <div class="container">
+             <div class="row text-center mt-5">
+                 <!-- Heading -->
+                <h1 class="display-3 fw-bold text-capitalize">Lastest work</h1>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, modi.</p>
+            </div>
+                <!-- Portfolio  category-->
+            <div class="row mt-5 mb-4 g-3 text-center">
+                <div class="col-md-12">
+                        <button class="btn btn-outline-primary" type="button">All</button>
+                        <button class="btn btn-outline-primary" type="button">Website</button>
+                        <button class="btn btn-outline-primary" type="button">Design</button>
+                        <button class="btn btn-outline-primary" type="button">Other</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio item 1-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-1.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 2-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 3-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-3.png" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 4-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-4.png" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 5-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-5.png" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 7-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="./src/portfolio/portfolio-6.png" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+                            <div class="portfolio-into">
+                                <div class="caption">
+                                    <h4>project name</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="get-started">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold  text-capitalize">Send me a message</h1>
+                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nemo dolore eius.</p>
+            </div>
+            <!-- Contact form -->
+            <div class="row text-white">
+                <div class="col-12 col-lg-6 gradient shadow p-3">
+                    <div class="cta-info w-100">
+                        <h4 class="display-4 fw-100">Talk to me</h4>
+                        <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nobis repudiandae molestias corporis, delectus odit ut repellendus consectetur reiciendis unde.</p>
+                        <h3 class="display-3--brief">What can I do for you?</h3>
+                        <ul class="cta-info__list">
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 bg-white shadow p-3">
+                    <div class="form w-100 pb-2">
+                        <h4 class="display-3--title mb5">start Your project</h4>
+                        <form action="#" class="row">
+                            <div class="col-lg-6 col-md-6  mb-3"><input type="text" placeholder="First Name" id="inputFirstName" class="shadow font-control-lg form-control"></div>
+                            <div class="col-lg-6 col-md-6  mb-3"><input type="text" placeholder="Last Name" id="inputLastName" class="form-control shadow font-control-lg"></div>
+                            <div class="col-lg-12 mb-3"><input type="text" placeholder="Email " id="inputEmail" class="form-control shadow font-control-lg"></div>
+                            <div class="col-lg-12 mb-3">
+                                <textarea name="Message" id="message" class="form-control shadow font-control-lg" rows="8" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-center d-grid mt-1">
+                                <button type="button" class="text-white btn btn-primary rounded-pill pt-3 pb-3">Submit <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer SECTION -->
+    <footer class="foo  ter">
+        <div class="container">
+            <div class="row">
+                <!-- Content for Mobile number -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            <path d="M15 7a2 2 0 0 1 2 2" />
+                            <path d="M15 3a6 6 0 0 1 6 6" />
+                          </svg>
+                    </div>
+                    <contact-box__info>
+                        <a href="tel:+64274408865" class="contact-box__infor--title">+64274408865</a>
+                        <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+                    </contact-box__info>
+                </div>
+                <!-- Content for Email -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                            <line x1="3" y1="19" x2="9" y2="13" />
+                            <line x1="15" y1="13" x2="21" y2="19" />
+                          </svg>
+                    </div>
+                    <contact-box__info>
+                        <a href="" class="contact-box__infor--title">john.d1729@gmail.com</a>
+                        <p class="contact-box__info--subtitle">Best Option</p>
+                    </contact-box__info>
+                </div>
+                <!-- Content for Location-->
+                <div class="col-md-4 col-lg-4 contact-box pt-1">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="18" y1="6" x2="18" y2="6.01" />
+                            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                            <line x1="9" y1="4" x2="9" y2="17" />
+                            <line x1="15" y1="15" x2="15" y2="20" />
+                          </svg>
+                    </div>
+                    <contact-box__info>
+                        <a href="" class="contact-box__infor--title">Nelson NZ</a>
+                        <p class="contact-box__info--subtitle">I move a lot</p>
+                    </contact-box__info>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <div></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./assets/vendors/js/glightbox.min.js"></script>
     <script src="./index.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
