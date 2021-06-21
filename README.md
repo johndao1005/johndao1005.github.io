@@ -6,10 +6,6 @@ Check it  out here [link](https://johndao1005.github.io/)
 
 ## What is this?
 
-## Contact me
-
-## What I learn
-
 ## Useful
 
 - checking between different display after finish each sections
@@ -73,6 +69,11 @@ Result
 
 - using `navbar` example from Bootstrap using container class instead of container-fluid
 - adding justify content to move the items to the
+- can choose to change the display type on different devices(lg or md) with bootstrap
+```html
+<div class="col-md-4 col-lg-4 contact-box pt-1  d-md-block d-lg-flex d-flex">
+    <!-- the last 3 class  -->
+```
 
 #### navbar
 

@@ -27,7 +27,7 @@
         line-height: 2.5rem;
     }
     &:hover {
-        @include gradient;
+        background-color: $primary;
         color: $white;
         span {
             background-color: rga($black, 0.6);
