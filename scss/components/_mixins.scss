@@ -1,7 +1,11 @@
 @use '../custom' as *;
 // gradient mixin 
 @mixin gradient {
-    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 1));
+}
+
+@mixin bwgradient {
+    background: linear-gradient(to right, rgba($white, 0.5), rgba($gray-600, 0.5), $black);
 }
 
 @mixin absoluteCenter {

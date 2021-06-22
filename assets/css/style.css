@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #2942ca;
+  --bs-blue: #0f29be;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -20,7 +20,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #5588d4;
-  --bs-secondary: #2942ca;
+  --bs-secondary: #0f29be;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -1995,15 +1995,15 @@ progress {
 }
 
 .table-secondary {
-  --bs-table-bg: #d4d9f4;
-  --bs-table-striped-bg: #c9cee8;
+  --bs-table-bg: #cfd4f2;
+  --bs-table-striped-bg: #c5c9e6;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bfc3dc;
+  --bs-table-active-bg: #babfda;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c4c9e2;
+  --bs-table-hover-bg: #bfc4e0;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bfc3dc;
+  border-color: #babfda;
 }
 
 .table-success {
@@ -2915,32 +2915,32 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #2942ca;
-  border-color: #2942ca;
+  background-color: #0f29be;
+  border-color: #0f29be;
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #2338ac;
-  border-color: #2135a2;
+  background-color: #0d23a2;
+  border-color: #0c2198;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #fff;
-  background-color: #2338ac;
-  border-color: #2135a2;
-  box-shadow: 0 0 0 0.25rem rgba(73, 94, 210, 0.5);
+  background-color: #0d23a2;
+  border-color: #0c2198;
+  box-shadow: 0 0 0 0.25rem rgba(51, 73, 200, 0.5);
 }
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #2135a2;
-  border-color: #1f3298;
+  background-color: #0c2198;
+  border-color: #0b1f8f;
 }
 .btn-check:checked + .btn-secondary:focus, .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(73, 94, 210, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(51, 73, 200, 0.5);
 }
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #fff;
-  background-color: #2942ca;
-  border-color: #2942ca;
+  background-color: #0f29be;
+  border-color: #0f29be;
 }
 
 .btn-success {
@@ -3149,27 +3149,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  color: #2942ca;
-  border-color: #2942ca;
+  color: #0f29be;
+  border-color: #0f29be;
 }
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #2942ca;
-  border-color: #2942ca;
+  background-color: #0f29be;
+  border-color: #0f29be;
 }
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(41, 66, 202, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(15, 41, 190, 0.5);
 }
 .btn-check:checked + .btn-outline-secondary, .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
   color: #fff;
-  background-color: #2942ca;
-  border-color: #2942ca;
+  background-color: #0f29be;
+  border-color: #0f29be;
 }
 .btn-check:checked + .btn-outline-secondary:focus, .btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(41, 66, 202, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(15, 41, 190, 0.5);
 }
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-  color: #2942ca;
+  color: #0f29be;
   background-color: transparent;
 }
 
@@ -4376,7 +4376,7 @@ textarea.form-control-lg {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232942ca'%3e%3cpath fill-rule='evenodd' d='M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230f29be'%3e%3cpath fill-rule='evenodd' d='M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 .accordion-button::after {
@@ -4627,12 +4627,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  color: #192879;
-  background-color: #d4d9f4;
-  border-color: #bfc6ef;
+  color: #091972;
+  background-color: #cfd4f2;
+  border-color: #b7bfec;
 }
 .alert-secondary .alert-link {
-  color: #142061;
+  color: #07145b;
 }
 
 .alert-success {
@@ -4971,17 +4971,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-secondary {
-  color: #192879;
-  background-color: #d4d9f4;
+  color: #091972;
+  background-color: #cfd4f2;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #192879;
-  background-color: #bfc3dc;
+  color: #091972;
+  background-color: #babfda;
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #192879;
-  border-color: #192879;
+  background-color: #091972;
+  border-color: #091972;
 }
 
 .list-group-item-success {
@@ -6012,10 +6012,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #2942ca;
+  color: #0f29be;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #2135a2;
+  color: #0c2198;
 }
 
 .link-success {
@@ -6412,7 +6412,7 @@ textarea.form-control-lg {
 }
 
 .border-secondary {
-  border-color: #2942ca !important;
+  border-color: #0f29be !important;
 }
 
 .border-success {
@@ -7241,7 +7241,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #2942ca !important;
+  color: #0f29be !important;
 }
 
 .text-success {
@@ -7297,7 +7297,7 @@ textarea.form-control-lg {
 }
 
 .bg-secondary {
-  background-color: #2942ca !important;
+  background-color: #0f29be !important;
 }
 
 .bg-success {
@@ -10741,12 +10741,12 @@ textarea.form-control-lg {
 }
 .display-2 {
   margin-bottom: 1rem;
-  text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  text-transform: inherit;
+  font-family: "Open Sans", "Helvetica Neue";
 }
 .display-2--intro {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
 }
 .display-2--description {
   font-size: 1.2rem;
@@ -10762,15 +10762,15 @@ textarea.form-control-lg {
 }
 
 .display-3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue";
+  font-size: 3rem;
 }
 .display-3--tittle {
   font-size: 1.5rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-family: "Open Sans", "Helvetica Neue";
   display: inline-block;
-  background-image: linear-gradient(to right, #5588d4, #2942ca);
+  background-image: linear-gradient(to right, #5588d4, #0f29be);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10787,7 +10787,7 @@ textarea.form-control-lg {
 }
 
 .gradient {
-  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), rgba(41, 66, 202, 0.95));
+  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), rgba(15, 41, 190, 0.95));
 }
 
 .btn-rounded {
@@ -10823,11 +10823,16 @@ textarea.form-control-lg {
   color: #fff;
 }
 .btn-rounded:hover span {
-  background-color: rga(#000, 0.6);
+  background-color: rga(#000, 0.8);
+}
+
+.logo-top {
+  height: 4rem;
+  width: 4rem;
 }
 
 .menu {
-  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), rgba(41, 66, 202, 0.95));
+  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), #0f29be);
 }
 .menu li {
   padding: 0 0.7rem;
@@ -10860,7 +10865,7 @@ textarea.form-control-lg {
 }
 
 .intro-section {
-  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), rgba(41, 66, 202, 0.95));
+  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), #0f29be);
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
@@ -10962,7 +10967,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 30px 0 0 0;
   margin-top: 10px;
-  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), rgba(41, 66, 202, 0.95));
+  background: linear-gradient(to right, rgba(85, 136, 212, 0.95), #0f29be);
 }
 .testimonial__card {
   background-color: rgba(255, 255, 255, 0.8);
