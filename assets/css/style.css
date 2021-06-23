@@ -10882,8 +10882,14 @@ textarea.form-control-lg {
 .intro-section .profile {
   max-height: 30rem;
 }
+.intro-section--about {
+  background-color: #000;
+  padding: 7rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
 
-.intros .video-box {
+.intros .image-box {
   position: relative;
 }
 
@@ -10931,48 +10937,55 @@ textarea.form-control-lg {
 .portfolio-box {
   position: relative;
   width: 100%;
-  max-height: 18.5rem;
+  max-height: 19rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
-  border-top: 0.2rem solid #5588d4;
   border-radius: 100;
 }
 .portfolio-box img {
   width: 100%;
   height: 100%;
 }
-.portfolio-box .portfolio-into {
-  background-color: rgba(85, 136, 212, 0.75);
+.portfolio-box .portfolio-info {
+  background-color: rgba(33, 37, 41, 0.8);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   opacity: 0;
-  left: 0;
   visibility: hidden;
 }
-.portfolio-box .portfolio-into .caption {
-  text-align: center;
+.portfolio-box .portfolio-info .caption {
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  padding: 0 0 2rem 2rem;
 }
-.portfolio-box .portfolio-into .caption h4 {
+.portfolio-box .portfolio-info .caption h4 {
   text-transform: uppercase;
   display: block;
+}
+.portfolio-box .portfolio-info .caption .small-pic {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0 0.5rem 0.5rem;
 }
 .portfolio-box:hover img {
   transform: scale(1.5);
   transition-duration: 500ms;
   transition-property: all;
 }
-.portfolio-box:hover .portfolio-into {
+.portfolio-box:hover .portfolio-info {
   opacity: 1;
   visibility: visible;
   transition-duration: 500ms;
   transition-property: all;
+}
+
+.small-icon {
+  font-size: 1.7rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
 }
 
 .testimonial {
