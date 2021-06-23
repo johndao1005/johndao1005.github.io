@@ -37,6 +37,12 @@
     }
 }
 
+.title {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 // Border right
 .border-right {
     border-right: 0.1rem solid $gray-300;

@@ -20,22 +20,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
     <!-- Adding Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Adding AOS-animation on scroll -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
 
 </head>
+<!-- Using Jquery to seperate footer, header and addon features as well as initial AOS -->
 <script>
     $(document).ready(function() {
         $('#navbar').load("./components/navbar.html");
         $('#footer').load("./components/footer.html");
         $('#addon').load("./components/addon.html");
     });
+
+    AOS.init();
 </script>
 
 <body>
-
     <!-- NAVBAR SECTION -->
     <div id="navbar">
     </div>
-
     <!-- INTRO SECTION -->
     <section id="home" class="intro-section">
         <div class="container">
@@ -55,21 +59,25 @@
                         </span>
                     </h1>
                     <a href="#contact"> <button type="button" class="rounded-pill btn-rounded">Get in touch
-                <span>
-                    <i class="fas fa-arrow-down"></i>
-                </span>
-            </button></a>
+                            <span>
+                                <i class="fas fa-arrow-down"></i>
+                            </span>
+                        </button></a>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,192C68.6,192,137,192,206,197.3C274.3,203,343,213,411,213.3C480,213,549,203,617,186.7C685.7,171,754,149,823,133.3C891.4,117,960,107,1029,101.3C1097.1,96,1166,96,1234,112C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,192L34.3,192C68.6,192,137,192,206,197.3C274.3,203,343,213,411,213.3C480,213,549,203,617,186.7C685.7,171,754,149,823,133.3C891.4,117,960,107,1029,101.3C1097.1,96,1166,96,1234,112C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
     </section>
 
     <!-- Input what I learn SECTION -->
     <section id="topic" class="topic">
         <div class="container">
             <div class="row text-center">
-                <h1 class="fw-bold display-3 lead ">What I Learned so far</h1>
+                <h1 class="title">What I Learned so far</h1>
                 <hr style="width:100px; height:3px;" class="mx-auto mb-5">
             </div>
         </div>
@@ -104,7 +112,7 @@
     <section id="services" class="ourservices">
         <div class="container">
             <div class="row text-center">
-                <h3 class="display-3 fw-bold">A bit of me</h3>
+                <h1 class="title ">A bit of me</h1>
                 <hr style="width:100px; height:3px;" class="mx-auto">
             </div>
         </div>
@@ -181,7 +189,7 @@
     <section id="testimonial" class="testimonial mt-5">
         <div class="container">
             <div class="row text-center text-white">
-                <h1 class="display-3 fw-bold">Testimonials</h1>
+                <h1 class="title">Testimonials</h1>
                 <hr style="width:100px; height:3px;" class="mx-auto">
                 <p class="lead pt-1">What others describe me</p>
             </div>
@@ -266,103 +274,13 @@
 
     <!-- Porfolio SECTION -->
     <!-- Might change into slideshow -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row text-center mt-5">
-                <!-- Heading -->
-                <h1 class="display-3 fw-bold text-capitalize">Lastest work</h1>
-                <p class="lead">Showcase my latest projects</p>
-            </div>
-            <!-- Portfolio  category-->
-            <div class="row mt-3 mb-4 g-3 text-center">
-                <div class="col-md-12">
-                    <button class="btn btn-outline-primary" type="button">All</button>
-                    <button class="btn btn-outline-primary" type="button">Website</button>
-                    <button class="btn btn-outline-primary" type="button">Design</button>
-                    <button class="btn btn-outline-primary" type="button">Other</button>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Portfolio item 1-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow">
-                        <img src="./src/portfolio/portfolio-1.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                        <div class="portfolio-into">
-                            <div class="caption">
-                                <h4>Redesign website</h4>
-                                <p>Using Bootstrap, html and css to redesign a commercial website</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio item 2-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow">
-                        <img src="./src/portfolio/portfolio-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
-                        <div class="portfolio-into">
-                            <div class="caption">
-                                <h4>NISA website</h4>
-                                <p>CMS using Stackbit building with Next.js and Vercel for hosting for NISA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio item 3-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow">
-                        <img src="./src/portfolio/portfolio-3.png" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-                        <div class="portfolio-into">
-                            <div class="caption">
-                                <h4>First Website</h4>
-                                <p>HTML, CSS, and JavaScript to create first semi-dynamic website for a business</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio item 4-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow">
-                        <img src="./src/portfolio/portfolio-4.png" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
-                        <div class="portfolio-into">
-                            <div class="caption">
-                                <h4>WordPress</h4>
-                                <p>Using WordPress to design and allow users to edit the content</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio item 5-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow">
-                        <img src="./src/portfolio/portfolio-5.png" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
-                        <div class="portfolio-into">
-                            <div class="caption">
-                                <h4>Personal portfolio</h4>
-                                <p>Using Bootstrap and sass</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio item 6-->
-                <!-- <div class="col-lg-4 col-md-6">
-                        <div class="portfolio-box shadow">
-                            <img src="./src/portfolio/portfolio-6.png" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
-                            <div class="portfolio-into">
-                                <div class="caption">
-                                    <h4>project name</h4>
-                                    <p>category project</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-            </div>
-        </div>
-    </section>
+
     <!-- Contact me SECTION -->
     <section id="contact" class="get-started">
         <div class="container">
             <div class="row text-center">
-                <h1 class="display-3 fw-bold  text-capitalize">Send me a message</h1>
+                <h1 class="title">Send me a message</h1>
+                <hr style="width:100px; height:3px;" class="mx-auto">
                 <p class="lh-lg">Send me anything. I am a social bug (sometime)</p>
             </div>
             <!-- Contact form -->
@@ -391,7 +309,8 @@
                                 <textarea name="Message" id="message" class="form-control shadow font-control-lg" rows="8" placeholder="Message"></textarea>
                             </div>
                             <div class="text-center d-grid mt-1">
-                                <button type="button" class="text-white btn btn-primary rounded-pill pt-3 pb-3">Submit <i class="fas fa-paper-plane"></i></button>
+                                <button type="button" class="text-white btn btn-primary rounded-pill pt-3 pb-3">Submit
+                                    <i class="fas fa-paper-plane"></i></button>
                             </div>
                         </form>
                     </div>
@@ -404,16 +323,20 @@
     <div id="footer"></div>
     <!-- BACK TO TOP BUTTON -->
     <div id="addon"></div>
+
     <!-- Adding Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <!-- Adding pooper for Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <!-- Adding bootstrap functionality -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <!-- Adding the packages for open video within the same window -->
     <script src="./assets/vendors/js/glightbox.min.js"></script>
     <!-- The main JavaScript -->
-    <script src="./main.js"></script>
+    <script src="./main.js" async defer></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.6.8/firebase-app.js"></script>

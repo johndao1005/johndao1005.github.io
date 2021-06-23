@@ -10781,6 +10781,12 @@ textarea.form-control-lg {
   }
 }
 
+.title {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .border-right {
   border-right: 0.1rem solid #dee2e6;
   height: 100%;
@@ -10829,6 +10835,33 @@ textarea.form-control-lg {
 .button {
   text-decoration: none;
 }
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #34b7a7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #49cbbb;
+  color: #fff;
+}
+.back-to-top .active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .logo-top {
   height: 4rem;
   width: 4rem;
@@ -10934,10 +10967,14 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
+.hello {
+  text-transform: capitalize;
+}
+
 .portfolio-box {
   position: relative;
   width: 100%;
-  max-height: 19rem;
+  max-height: 26rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-radius: 100;
@@ -11179,6 +11216,41 @@ textarea.form-control-lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.details {
+  list-style: none;
+  overflow: hidden;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Open-Sans", sans-serif;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar {
+  width: 1%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #5588d4;
+}
+.skills .progress-bar-wrap {
+  background: #dee2e6;
 }
 
 /*# sourceMappingURL=style.css.map */
