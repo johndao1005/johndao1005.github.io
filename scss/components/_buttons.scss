@@ -52,22 +52,24 @@
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #34b7a7;
+    background: $primary;
     width: 40px;
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
     i {
-        font-size: 24px;
-        color: #fff;
+        font-size: 1rem;
+        color: $white;
         line-height: 0;
+        @include absoluteCenter;
     }
     &:hover {
-        background: #49cbbb;
+        background: $secondary;
         color: #fff;
     }
-    .active {
-        visibility: visible;
-        opacity: 1;
-    }
+}
+
+.back-to-top-active {
+    visibility: visible;
+    opacity: 1;
 }

@@ -1,9 +1,7 @@
 (function() {
     "use strict";
 
-    /**
-     * Easy selector helper function
-     */
+    //ANCHOR selector helper function
     const select = (el, all = false) => {
         el = el.trim()
         if (all) {
@@ -13,9 +11,7 @@
         }
     }
 
-    /**
-     * Easy event listener function
-     */
+    //ANCHOR event listener function
     const on = (type, el, listener, all = false) => {
         let selectEl = select(el, all)
         if (selectEl) {
@@ -27,9 +23,7 @@
         }
     }
 
-    /**
-     * Easy on scroll event listener 
-     */
+    //ANCHOR scroll listener function
     const onscroll = (el, listener) => {
         el.addEventListener('scroll', listener)
     }
@@ -40,9 +34,9 @@
     if (backtotop) {
         const toggleBacktotop = () => {
             if (window.scrollY > 100) {
-                backtotop.classList.add('active')
+                backtotop.classList.add('back-to-top-active')
             } else {
-                backtotop.classList.remove('active')
+                backtotop.classList.remove('back-to-top-active')
             }
         }
         window.addEventListener('load', toggleBacktotop)

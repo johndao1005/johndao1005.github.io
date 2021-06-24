@@ -10849,22 +10849,27 @@ textarea.form-control-lg {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #34b7a7;
+  background: #5588d4;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 24px;
+  font-size: 1rem;
   color: #fff;
   line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .back-to-top:hover {
-  background: #49cbbb;
+  background: #2942ca;
   color: #fff;
 }
-.back-to-top .active {
+
+.back-to-top-active {
   visibility: visible;
   opacity: 1;
 }
@@ -10877,13 +10882,24 @@ textarea.form-control-lg {
 .menu {
   background: linear-gradient(to right, rgba(85, 136, 212, 0.95), #2942ca);
 }
-.menu li {
+.menu ul li {
   padding: 0 0.7rem;
 }
-.menu li a {
-  color: #fff !important;
+.menu ul li a {
+  color: rgba(237, 234, 234, 0.918) !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+.menu ul li a:hover {
+  color: #fff !important;
+}
+.menu ul li:last-child {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .menu ul li:last-child {
+    display: block;
+  }
 }
 
 .blog-logo {
