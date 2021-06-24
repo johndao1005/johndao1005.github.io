@@ -21,7 +21,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
     <!-- Adding Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <!-- Import Packet CSS SECTION -->
+    <!-- Import Glightbox which allow popup -->
+    <link rel="stylesheet" href="../assets/vendors/glightbox.min.css">
+    <!-- AOS for fade animtaion -->
+    <link rel="stylesheet" href="../assets/vendors//aos/aos.css">
+    <!-- For drag the pic in slideshow -->
+    <link rel="stylesheet" href="../assets/vendors/swiper/swiper-bundle.min.css">
 </head>
 <script>
     $(document).ready(function() {
@@ -42,7 +48,7 @@
                 <p class="lead">Showcase my works</p>
             </div>
             <!-- Portfolio  category-->
-            <div class="row mt-3 mb-4 g-3 text-center">
+            <div class="row mt-1 mb-4 g-3 text-center">
                 <div class="col-md-12" id="portfolio-flters">
                     <button class="btn btn-outline-primary" type="button" data-filter="*" class="filter-active">All</button>
                     <button class="btn btn-outline-primary" type="button" data-filter=".filter-website">Website</button>
@@ -171,9 +177,14 @@
     </section>
     <div id="footer"></div>
     <div id="addon"></div>
+
     <!-- Packet SECTION -->
     <!-- Adding AOS for animation and moment-->
     <script src="../assets/vendors/aos/aos.js"></script>
+    <!-- Adding Waypoint to move to items -->
+    <script src="../assets/vendors/waypoints/noframework.waypoints.js"></script>
+    <!-- Adding isotope for filter and reorder item -->
+    <script src="../assets/vendors/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Adding Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Adding pooper for Bootstrap -->

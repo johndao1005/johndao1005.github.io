@@ -1,5 +1,9 @@
 (function() {
-    //ANCHOR Easy selector helper function
+    "use strict";
+
+    /**
+     * Easy selector helper function
+     */
     const select = (el, all = false) => {
         el = el.trim()
         if (all) {
@@ -9,38 +13,30 @@
         }
     }
 
-    // ANCHOR Adding event listener functions
+    /**
+     * Easy event listener function
+     */
     const on = (type, el, listener, all = false) => {
-            let selectEl = select(el, all)
-            if (selectEl) {
-                if (all) {
-                    selectEl.forEach(e => e.addEventListener(type, listener))
-                } else {
-                    selectEl.addEventListener(type, listener)
-                }
+        let selectEl = select(el, all)
+        if (selectEl) {
+            if (all) {
+                selectEl.forEach(e => e.addEventListener(type, listener))
+            } else {
+                selectEl.addEventListener(type, listener)
             }
         }
-        //scroll to an element smooth
-    const scrollto = (el) => {
-            let header = select('#header')
-            let offset = header.offsetHeight
+    }
 
-            let elementPos = select(el).offsetTop
-            window.scrollTo({
-                top: elementPos - offset,
-                behavior: 'smooth'
-            })
-        }
-        // ANCHOR adding glight box
-    const lightbox = GLightbox({
-        'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoplayVideos': 'true',
-    })
+    /**
+     * Easy on scroll event listener 
+     */
+    const onscroll = (el, listener) => {
+        el.addEventListener('scroll', listener)
+    }
 
-    //ANCHOR back to top button hiding thelet backtotop = select('.back-to-top')
+
+    //ANCHOR back to top button
+    let backtotop = select('.back-to-top')
     if (backtotop) {
         const toggleBacktotop = () => {
             if (window.scrollY > 100) {
@@ -53,7 +49,76 @@
         onscroll(document, toggleBacktotop)
     }
 
-    //ANCHOR Skills animation
+    //ANCHOR scroll with ofset on page load with hash links in the url
+    window.addEventListener('load', () => {
+        if (window.location.hash) {
+            if (select(window.location.hash)) {
+                scrollto(window.location.hash)
+            }
+        }
+    });
+
+
+    //ANCHOR Portfolio filter with isotope
+    window.addEventListener('load', () => {
+        let portfolioContainer = select('.portfolio-container');
+        if (portfolioContainer) {
+            let portfolioIsotope = new Isotope(portfolioContainer, {
+                itemSelector: '.portfolio-item'
+            });
+
+            let portfolioFilters = select('#portfolio-flters li', true);
+
+            on('click', '#portfolio-flters li', function(e) {
+                e.preventDefault();
+                portfolioFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+
+                portfolioIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                portfolioIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+    /**
+     * Initiate portfolio lightbox 
+     */
+    const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+    });
+
+    /**
+     * Initiate portfolio details lightbox 
+     */
+    const portfolioDetailsLightbox = GLightbox({
+        selector: '.portfolio-details-lightbox',
+        width: '90%',
+        height: '90vh'
+    });
+
+    //ANCHOR Portfolio slider
+    new Swiper('.portfolio-details-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        }
+    });
+
+    //ANCHOR SKills bar
     let skilsContent = select('.skills-content');
     if (skilsContent) {
         new Waypoint({
@@ -67,4 +132,31 @@
             }
         })
     }
+
+    //ANCHOR slider
+    new Swiper('.slider', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        }
+    });
+
+    //ANCHOR animation on scroll
+    window.addEventListener('load', () => {
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false
+        });
+    });
+
 })()
