@@ -11200,22 +11200,14 @@ textarea.form-control-lg {
     font-size: 1.6rem;
   }
 }
-
-.back-to-top {
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
-  z-index: 9999;
+.footer-bottom .social {
+  text-align: end;
 }
-.back-to-top i {
-  color: #fff;
-  font-size: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media (min-width: 576px) {
+  .footer-bottom .social {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 .details {
@@ -11251,6 +11243,51 @@ textarea.form-control-lg {
 }
 .skills .progress-bar-wrap {
   background: #dee2e6;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #5588d4;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open sans", sans-serif;
+  color: #2942ca;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #5588d4;
+}
+.resume .resume-item li {
+  line-height: 2;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #5588d4;
 }
 
 /*# sourceMappingURL=style.css.map */
