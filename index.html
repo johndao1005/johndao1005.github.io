@@ -37,8 +37,7 @@
 
 <body>
     <!-- NAVBAR SECTION -->
-    <div id="navbar">
-    </div>
+    <div id="navbar"></div>
     <!-- INTRO SECTION -->
     <section id="home" class="intro-section">
         <div class="container">
@@ -52,9 +51,12 @@
                 <!-- Small intro -->
                 <div class="col-md-6 intros text-center">
                     <h1 class="display-2">
-                        <span class="display-2--intro">John Dao</span>
+                        <span class="display-2--intro text-uppercase">John Dao</span>
                         <span class="display-2--description lh-base">
-                            I am a to-be developer, a husband and a chef
+                            I am an on-training developer, a husband and a chef.</br>
+                            Alway open to learn and share the knowledge so <br>
+                            Let talk about anything!
+
                         </span>
                     </h1>
                     <a href="#contact"> <button type="button" class="rounded-pill btn-rounded">Get in touch
@@ -73,36 +75,64 @@
     </section>
 
     <!-- Input what I learn SECTION -->
-    <section id="topic" class="topic" data-aos="zoom-in" data-aos-delay="100">
-        <div class="container">
+    <section id="topic" class="topic">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <div class="row text-center">
-                <h1 class="title">What I Learned so far</h1>
-                <hr style="width:100px; height:3px;" class="mx-auto mb-5">
+                <h1 class="title accordion-header">What I Learned so far</h1>
+                <hr style="width:100px; height:3px;" class="mx-auto mb-5 bg-secondary">
             </div>
         </div>
         <!-- Library -->
         <div class="container">
-            <div class="row">
+            <div class="row text-center" data-aos="zoom-in" data-aos-delay="100">
+                <h1 class="lead mt-2 mb-3">Coding languages</h1>
+            </div>
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
                 <div class="col-md-3 col-sm-5">
                     <div class="topic__logo-box shadow-sm">
-                        <img src="./src/topic/js.svg" alt="Topic 1 logo" title="Topic 1 Logo" class="img-fluid">
+                        <img src="./src/topic/js.svg" alt="Javascript" title="Javascript" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5">
                     <div class="topic__logo-box shadow-sm">
-                        <img src="./src/topic/cs.svg" alt="Topic 2 logo" title="Topic 2 Logo" class="img-fluid">
+                        <img src="./src/topic/cs.svg" alt="C sharp" title="C sharp" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5">
                     <div class="topic__logo-box shadow-sm">
-                        <img src="./src/topic/css.svg" alt="Topic 3 logo" title="Topic 3 Logo" class="img-fluid">
+                        <img src="./src/topic/css.svg" alt="CSS" title="CSS" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5">
                     <div class="topic__logo-box shadow-sm">
-                        <img src="./src/topic/html.svg" alt="Topic 4 logo" title="Topic 4 Logo" class="img-fluid">
+                        <img src="./src/topic/html.svg" alt="HTML" title="HTML" class="img-fluid">
                     </div>
                 </div>
+            </div>
+            <div class="row text-center mt-2 mb-3" data-aos="zoom-in" data-aos-delay="100">
+                <h1 class="lead fw-600">Framework and other</h1>
+
+            </div>
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm"><img src="./src/topic/firebase.svg" alt="Firebase" title=" Firebase" class="img-fluid"></div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm"><img src="./src/topic/stackbit.svg" alt="Stackbit" title=" Stackbit" class="img-fluid"></div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm"><img src="./src/topic/vercel.svg" alt="Vercel" title=" Vercel" class="img-fluid"></div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box shadow-sm"><img src="./src/topic/bootstrap.svg" alt="Bootstrap" title=" Bootstrap" class="img-fluid"></div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box show-sm"><img src=".src/topic/topic.svg" alt="Topic 9 logo" title=" Topic 9 logo" class="img-fluid"></div>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    <div class="topic__logo-box show-sm"><img src=".src/topic/topic.svg" alt="Topic 10 logo" title=" Topic 10 logo" class="img-fluid"></div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -112,7 +142,7 @@
         <div class="container">
             <div class="row text-center">
                 <h1 class="title ">A bit of me</h1>
-                <hr style="width:100px; height:3px;" class="mx-auto">
+                <hr style="width:100px; height:3px;" class="mx-auto bg-secondary">
             </div>
         </div>
         <!-- Description +content -->
@@ -189,7 +219,7 @@
         <div class="container">
             <div class="row text-center text-white">
                 <h1 class="title">Testimonials</h1>
-                <hr style="width:100px; height:3px;" class="mx-auto">
+                <hr style="width:100px; height:3px;" class="mx-auto bg-secondary">
                 <p class="lead pt-1">What others describe me</p>
             </div>
 
@@ -276,7 +306,7 @@
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <div class="row text-center">
                 <h1 class="title">Send me a message</h1>
-                <hr style="width:100px; height:3px;" class="mx-auto">
+                <hr style="width:100px; height:3px;" class="mx-auto bg-secondary">
                 <p class="lh-lg">Send me anything. I am a social bug (sometime)</p>
             </div>
             <!-- Contact form -->
