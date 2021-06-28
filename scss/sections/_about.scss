@@ -6,32 +6,10 @@
     line-height: 2;
 }
 
-.skills {
-    .progress {
-        height: 60px;
-        display: block;
-        background: none;
-        border-radius: 0;
-        .skill {
-            padding: 10px 0;
-            margin: 0 0 6px 0;
-            text-transform: uppercase;
-            display: block;
-            font-weight: 600;
-            font-family: "Open-Sans", sans-serif;
-            .val {
-                float: right;
-                font-style: normal;
-            }
-        }
-    }
-    .progress-bar {
-        width: 1%;
-        height: 10px;
-        transition: .9s;
-        background-color: $primary;
-        &-wrap {
-            background: $gray-300;
-        }
+.hidden-mb {
+    display: block;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        display: none;
     }
 }

@@ -11240,32 +11240,14 @@ textarea.form-control-lg {
   line-height: 2;
 }
 
-.skills .progress {
-  height: 60px;
+.hidden-mb {
   display: block;
-  background: none;
-  border-radius: 0;
+  position: relative;
 }
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Open-Sans", sans-serif;
-}
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .progress-bar {
-  width: 1%;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #5588d4;
-}
-.skills .progress-bar-wrap {
-  background: #dee2e6;
+@media (max-width: 575.98px) {
+  .hidden-mb {
+    display: none;
+  }
 }
 
 .resume .resume-title {
@@ -11311,6 +11293,34 @@ textarea.form-control-lg {
   top: 0;
   background: #fff;
   border: 2px solid #5588d4;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Open-Sans", sans-serif;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar {
+  width: 1%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #5588d4;
+}
+.skills .progress-bar-wrap {
+  background: #dee2e6;
 }
 
 /*# sourceMappingURL=style.css.map */
