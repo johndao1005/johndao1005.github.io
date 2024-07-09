@@ -222,7 +222,10 @@
     <a href="#" class="back-to-top shadow btn-primary rounded-circle ">
         <i class="fas fa-chevron-up"></i>
     </a>
-
+<div>
+    Hi
+</div>
+<button id="basicFetchButton">test</button>
     <!-- Packet SECTION -->
     <!-- Adding AOS for animation and moment-->
     <script src="../assets/vendors/aos/aos.js"></script>
@@ -242,6 +245,62 @@
     <script src="../assets/vendors/glightbox/glightbox.min.js "></script>
     <!-- The main JavaScript -->
     <script src="../main.js " async defer></script>
+
+    
+<script type="text/javascript">
+    var url = "https://devmemberappdata.azure-api.net/When_a_HTTP_request_is_received/paths/invoke";
+    var url2 = "https://catfact.ninja/fact";
+    var postData = {
+        AuthorisedData: "darthmaul214@gmail.com"
+        //email: "darthmaul214@gmail.com",
+        //firstname: "Russell",
+        //lastname: "Remolin"
+    };
+    var requestOptions = {
+        method: 'POST',
+        headers: {
+            'mode': 'no-cors',
+            "Content-Type": "application/json",
+            "Authorization": "Bearer 123132",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS"
+        },
+        body: JSON.stringify(postData)
+    };
+
+    document.getElementById("basicFetchButton").addEventListener("click", function () {
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 123132",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS"
+            }
+        }).then((data) => {
+            console.log(data);
+        }).catch(error => {
+            console.error
+                ('Error:', error);
+        });;
+    });
+    console.log("Hello World");
+
+    // fetch(url, requestOptions)
+    //     .then(response => {
+    //         if (!response.ok) {
+    //             throw new Error("Network response was not ok " + response.statusText);
+    //         }
+    //         return response.json();
+    //     })
+    //     .then(data => {
+    //         console.log(data);
+    //     })
+    //     .catch(error => {
+    //         console.error("Error:", error);
+    //     });
+
+</script>
 </body>
 
 </html>
