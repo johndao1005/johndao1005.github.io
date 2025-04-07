@@ -317,31 +317,6 @@ export default function Home() {
     </Grid>
   </Container>)
 
-  const ContactForm = ()=>(<Box component="section" id="contact" sx={{ py: 6 }}>
-    <Container>
-      <Box textAlign="center" mb={5} component={motion.div}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-      >
-        <Typography variant="h3">Send me a message</Typography>
-        <Divider sx={{
-          width: '100px',
-          height: '3px',
-          margin: '0 auto',
-          marginBottom: theme.spacing(5),
-          backgroundColor: theme.palette.secondary.main,
-        }} />
-        <Typography sx={{
-          fontWeight: 'bold',
-          marginBottom: theme.spacing(1),
-        }}>Send me anything. I am a social bug (sometimes)</Typography>
-      </Box>
-
-      <ContactForm />
-    </Container>
-  </Box>)
-
   return (
     <>
       <HeroSection/>
@@ -354,32 +329,6 @@ export default function Home() {
           <FeatureSection/>
         </Box>
 
-        {/* Testimonials Section */}
-        {/* <TestimonialSection component="section" id="testimonial">
-        <Container>
-        <Box textAlign="center" mb={5}>
-        <SectionTitle variant="h3" sx={{ color: 'white' }}>Testimonials</SectionTitle>
-        <Divider />
-        <Typography variant="h6" sx={{ mt: 2, color: 'rgba(255, 255, 255, 0.8)' }}>
-        What others describe me
-        </Typography>
-        </Box>
-        
-        <Carousel
-        animation="slide"
-        navButtonsAlwaysVisible
-        autoPlay={false}
-        indicators={true}
-        sx={{ maxWidth: 800, mx: 'auto' }}
-        >
-        {testimonials.map((item, index) => (
-          <TestimonialCard key={index} {...item} />
-          ))}
-          </Carousel>
-          </Container>
-          </TestimonialSection> */}
-
-        {/* Contact Section */}
         <ContactForm/>
       </Box>
     </>
